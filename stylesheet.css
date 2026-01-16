@@ -187,7 +187,7 @@
 .yt-video{
     height: 50vh;
     position: absolute;
-    top: 130vh; 
+    top: 130%; 
     left: 0;
     width: 100%;
     display: flex;
@@ -214,8 +214,8 @@
 }
 .pn-text{
     position: absolute;
-    top: 5vh;
-    left: 5vw;
+    top: 2%;
+    left: 12%;
     font-size: 300%;
 }
 .pn-text::first-letter{
@@ -230,7 +230,7 @@
     content: '';
     text-decoration: underline;
     position: absolute;
-    top: 7vh;
+    top: 80%;
     left:0;
     height: 2px;
     background-color: white;
@@ -242,8 +242,8 @@
 }
 .hyper-links{
     position: absolute;
-    top: 35vh;
-    left: 5vw;
+    top: 54%;
+    left: 12%;
     width:100%;
 }
 .hyper-links a{
@@ -267,8 +267,8 @@
 }
 .pn-desc{
     position: absolute;
-    top: 40vh;
-    left: 2.6vw;
+    top: 61%;
+    left: 6%;
     font-family: "Roboto";
 }
 .pn-desc-heading{
@@ -288,8 +288,8 @@
 }
 .news{
     position: absolute;
-    top: 197vh;
-    left: 47vw;
+    top: 193%;
+    left: 47%;
     z-index: 1;
     color: white;
     font-size: 400%;
@@ -303,8 +303,8 @@
 }
 .news::before{
     position: relative;
-    top: -1.5vh;
-    left: 10vw;
+    top: -11px;
+    left: 110%;
     content: "\f061";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -312,8 +312,8 @@
 }
 .news::after{
     position: absolute;
-    top: 9vh;
-    left: 2vw;
+    top: 80%;
+    left: 25%;
     background-color: orange;
     text-decoration: underline;
     width: 0%;
@@ -332,37 +332,34 @@
 }
 .news-tabs{
     position: absolute;
-    top: 210vh;
+    top: 210%;
     z-index: 1;
     max-width: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 0 3vw;
+    padding: 0 3%;
     box-sizing: border-box;
 }
 .news-container{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 27vw;
+    width: 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .news-container:hover{
     transform: translateY(-5%);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.bg-texture{
-    height: 40vh;
-}
 .news-text{
     position: absolute;
-    top: 37vh;
-    left: 1.4vw;
+    top: 56%;
+    left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30vh;
+    height: 43%;
 }
 .pc, .console{
     text-decoration: none;
@@ -387,13 +384,13 @@
     font-size: x-large;
     text-transform: uppercase;
     transform: scale(0.8,1);
-    margin-left: -2.6vw;
+    margin-left: -11%;
 }
 .news-desc{
     font-family: 'Roboto';
     color: rgb(49, 49, 49);
     transform: scale(0.8,1);
-    margin-left: -2.6vw;
+    margin-left: -11%;
     font-style: italic;
 }
 .announcement{
@@ -411,7 +408,7 @@
     color: rgb(174, 174, 174);
     font-stretch: ultra-condensed;
     letter-spacing: -1px;
-    margin-left: 2vw;
+    margin-left: 11%;
 }
 .grey-noise{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://us1.discourse-cdn.com/webflow1/original/4X/4/0/9/409887b5ae60438bb7637527278c082a360d81a9.gif);
@@ -460,8 +457,8 @@
 }
 .Events{
     position: absolute;
-    top: 283vh;
-    left: 43vw;
+    top: 283%;
+    left: 43%;
     z-index: 1;
     color: black;
     font-size: 400%;
@@ -475,8 +472,8 @@
 }
 .Events::before{
     position: relative;
-    top: -1.5vh;
-    left: 12vw;
+    top: -15px;
+    left: 100%;
     content: "\f061";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -487,8 +484,8 @@
     width:0%;
     background-color: orange;
     content:'';
-    top: 9vh;
-    left: 1.7vw;
+    top: 80%;
+    left: 16%;
     text-decoration: underline;
     height: 2px;
     transition: width 0.3s ease;
