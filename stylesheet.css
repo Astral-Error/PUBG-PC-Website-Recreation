@@ -1,0 +1,716 @@
+/*For the header*/
+.header{
+    background-color: black;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header button{
+    height:6vw;
+    width: 14.4vw;
+    margin: 0px;
+    text-transform: uppercase;
+    appearance: none;
+    background-color: rgb(255, 191, 0);
+    font-weight: 800;
+    font-size: 220%;
+    font-stretch: ultra-condensed;
+    border: 0px;
+    transition: background-color 0.3s ease;
+}
+.header button:hover{
+    background-color: rgb(255, 136, 0);
+}
+
+/*Left Half*/
+.left-half{
+    margin-left: 3%;
+    color: white;
+    font-family: 'Roboto';
+    scale: 150%;
+}
+.left-half a{
+    transition: color 0.3s ease;
+}
+.left-half:hover a{
+    color:orange;
+}
+/*Right Half*/
+.right-half{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100vw;
+    width: 70%;
+    color: white;
+}
+/*Select modification*/
+.selector{
+    transition: color 0.3s ease;
+}
+.selector:hover{
+    color: orange;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-VariableFont_wdth,wght.ttf);
+}
+#login{
+    display: static;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 120%;    
+    font-weight: 800;
+    font-stretch: ultra-condensed;
+    transition: color 0.3s ease;
+}
+.tilde{
+    color: white;
+}
+.header select{
+    text-transform: uppercase;
+    appearance: none;
+    border: 0px;
+    background-color: transparent;
+    color: inherit;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 120%;
+    font-stretch: ultra-condensed;
+    transition: color 0.3s ease;
+}
+#login:hover{
+    color:orange;
+}
+#logo{
+    scale: 30%;
+}
+.left-half a, .nav-links a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    height: 50px;
+    background-color: #222;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Roboto';
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 0px 10%;
+}
+.nav-links a{
+    transform: scale(0.8,1);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.nav-links a:hover{
+    color: orange;
+}
+@font-face{
+    font-family: 'Pubg Sans';
+    src: url(PUBG_SANS.ttf);
+}
+.container{
+    background: 
+    linear-gradient(to top, black 0%, transparent 50%),
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(https://wstatic-prod.pubg.com/web/live/main_b936404/img/1337804.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 932px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 0px;
+}
+.main-container{
+    padding-bottom: 10%;
+}
+.name{
+    color: white;
+    font-size: 500%;
+    font-family: 'Pubg Sans';
+    text-transform: uppercase;
+    margin: 0px 0px;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(BebasNeue-Regular.otf);
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+}
+.land-loot{
+    display: flex;
+    color: white;
+    font-size: 220%;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    transform: scale(0.9,0.7);
+    margin-top: -20px;
+}
+.app-stores{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.app-stores a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 120%;
+    margin: 0px 0.2em;
+    color: white;
+    background-color: transparent;
+    appearance: none;
+    padding:0.7em 3em;
+    border: 1px solid white;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.app-stores a:hover{
+    background-color: orange;
+    color: black;
+    border: 1px solid orange;
+}
+.yt-video{
+    height: 50vh;
+    position: absolute;
+    top: 130vh; 
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+.in-yt-video{
+    display: flex;
+}
+.in-yt-video iframe{
+    width: 50vw;
+}
+.patch-notes{
+    color: white;
+    font-family: 'Pubg Sans';
+}
+.patch-notes{
+    position: relative;
+}
+.patch-notes img{
+    display: block;
+}
+.pn-text{
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    font-size: 300%;
+}
+.pn-text::first-letter{
+    color: orange;
+}
+.pn-text a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.pn-text::after{
+    content: '';
+    text-decoration: underline;
+    position: absolute;
+    top: 7vh;
+    left:0;
+    height: 2px;
+    background-color: white;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+.pn-text:hover::after{
+    width:100%;
+}
+.hyper-links{
+    position: absolute;
+    top: 35vh;
+    left: 5vw;
+    width:100%;
+}
+.hyper-links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 0.5% 4%;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 5px;
+    font-size: 70%;
+    transition: color 0.3s ease, border 0.3s ease;
+}
+.hyper-links a:hover{
+    color: orange;
+    border-width: 1px;
+    border-style: solid;
+    border-color: orange;
+}
+.pn-desc{
+    position: absolute;
+    top: 40vh;
+    left: 2.6vw;
+    font-family: "Roboto";
+}
+.pn-desc-heading{
+    font-weight: bolder;
+    font-size: 200%;
+    transform: scale(0.9,1);
+}
+.pn-desc-desc{
+    font-size: 90%;
+    transform: scale(0.9,1);
+}
+.pn-desc-desc::first-line{
+    color: rgb(159, 159, 159);
+}
+.pn-desc p{
+    margin: 2vh;
+}
+.news{
+    position: absolute;
+    top: 197vh;
+    left: 47vw;
+    z-index: 1;
+    color: white;
+    font-size: 400%;
+    font-family: 'Pubg Sans';
+    transition: color 0.3s ease;
+}
+.news a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.news::before{
+    position: relative;
+    top: -1.5vh;
+    left: 10vw;
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 50%;
+}
+.news::after{
+    position: absolute;
+    top: 9vh;
+    left: 2vw;
+    background-color: orange;
+    text-decoration: underline;
+    width: 0%;
+    content:'';
+    height: 2px;
+    transition: width 0.3s ease;
+}
+.news:hover::after{
+    width:100%;
+}
+.news:hover{
+    color: orange;
+}
+.news a:hover{
+    color: orange;
+}
+.news-tabs{
+    position: absolute;
+    top: 210vh;
+    z-index: 1;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3vw;
+    box-sizing: border-box;
+}
+.news-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 27vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-container:hover{
+    transform: translateY(-5%);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bg-texture{
+    height: 40vh;
+}
+.news-text{
+    position: absolute;
+    top: 37vh;
+    left: 1.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+}
+.pc, .console{
+    text-decoration: none;
+    font-family: 'Roboto';
+    border-radius: 5px;
+    padding: 0.5% 4%;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.pc{
+    color: orange;
+    border: 1px solid orange;
+}
+.console{
+    color: grey;
+    border: 1px solid grey;
+}
+.news-header{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: x-large;
+    text-transform: uppercase;
+    transform: scale(0.8,1);
+    margin-left: -2.6vw;
+}
+.news-desc{
+    font-family: 'Roboto';
+    color: rgb(49, 49, 49);
+    transform: scale(0.8,1);
+    margin-left: -2.6vw;
+    font-style: italic;
+}
+.announcement{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    font-size: 80%;
+    text-transform: uppercase;
+    color: orange;
+}
+.news-footer{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 80%;
+    color: rgb(174, 174, 174);
+    font-stretch: ultra-condensed;
+    letter-spacing: -1px;
+    margin-left: 2vw;
+}
+.grey-noise{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://us1.discourse-cdn.com/webflow1/original/4X/4/0/9/409887b5ae60438bb7637527278c082a360d81a9.gif);
+    height: 500px;
+    padding: 50px 0px;
+    background-repeat: none;
+    background-size: contain;
+    border: none;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: 'Pubg Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1400%;
+    -webkit-text-stroke: 2px rgb(88, 88, 88);
+    letter-spacing: 10px;
+}
+.scroll-container{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.grey-noise-top{
+    animation: textscroll 60s linear infinite;
+    white-space: nowrap;
+}
+.grey-noise-bottom{
+    animation: textscroll-inverse 60s linear infinite;
+    white-space: nowrap;
+}
+.grey-noise p{
+    margin: 0px 2.5%;
+}
+@keyframes textscroll{
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+@keyframes textscroll-inverse{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+.white-bg img{
+    width: 100%;
+}
+.Events{
+    position: absolute;
+    top: 283vh;
+    left: 43vw;
+    z-index: 1;
+    color: black;
+    font-size: 400%;
+    font-family: 'Pubg Sans';
+    transition: color 0.3s ease;
+}
+.Events a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.Events::before{
+    position: relative;
+    top: -1.5vh;
+    left: 12vw;
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 50%;
+}
+.Events::after{
+    position: absolute;
+    width:0%;
+    background-color: orange;
+    content:'';
+    top: 9vh;
+    left: 1.7vw;
+    text-decoration: underline;
+    height: 2px;
+    transition: width 0.3s ease;
+}
+.Events:hover::after{
+    width:100%;
+}
+.Events a:hover{
+    color: orange
+}
+.Events:hover{
+    color: orange
+}
+.events-tabs{
+    position: absolute;
+    top: 295vh;
+    z-index: 1;
+    max-width: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 0 10vw;
+    box-sizing: border-box;
+}
+.events-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.events-container:hover{
+    transform: translateY(-5%);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.events-bg-texture{
+    height: 35vh;
+}
+.events-text{
+    position: absolute;
+    top: 37vh;
+    left: 1.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+}
+.pc, .console{
+    text-decoration: none;
+    font-family: 'Roboto';
+    border-radius: 5px;
+    padding: 0.5% 4%;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.pc{
+    color: orange;
+    border: 1px solid orange;
+}
+.console{
+    color: grey;
+    border: 1px solid grey;
+}
+.events-header{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: x-large;
+    text-transform: uppercase;
+    transform: scale(0.8,1);
+    margin-left: -2.6vw;
+    line-height: 1.5;
+}
+.events-desc{
+    font-family: 'Roboto';
+    color: rgb(255, 255, 255);
+    transform: scale(0.8,1);
+    margin-left: -2.6vw;
+    font-style: italic;
+}
+.announcement{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    font-size: 80%;
+    text-transform: uppercase;
+    color: orange;
+}
+.events-footer{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 80%;
+    color: rgb(174, 174, 174);
+    font-stretch: ultra-condensed;
+    letter-spacing: -1px;
+    margin-left: 2vw;
+}
+.footer{
+    background-color: black;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5% 39%;
+}
+.socials button{
+    appearance: none;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 110%;
+    padding: 0.7em 0.8em;
+}
+#facebook{
+    background-color: rgb(0, 136, 255);
+    border: 1px solid rgb(0, 136, 255);
+    border-radius: 12px;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+#facebook:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 136, 255);
+    border-radius: 12px;
+}
+#x{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+#x:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black
+}
+#instagram{
+    background-color: rgb(157, 0, 255);
+    border: 0px solid rgb(157, 0, 255);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#instagram:hover{
+    background-color: white;
+    color: rgb(157, 0, 255);
+}
+#yt{
+    background-color: rgb(255, 0, 0);
+    border: 0px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#yt:hover{
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+#discord{
+    background-color: rgb(68, 121, 255);
+    border: 0px solid rgb(68, 121, 255);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+#discord:hover{
+    background-color: white;
+    color: rgb(68, 121, 255);
+}
+#reddit{
+    background-color: rgb(255, 77, 0);
+    border: 1px solid rgb(255, 77, 0);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+#reddit:hover{
+    background-color: white;
+    color: rgb(255, 77, 0);
+}
+.logo-marks{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+}
+.logo-marks img{
+    width: 30%;
+}
+.footer-navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 20%;
+    box-sizing: border-box;
+    margin-bottom: 15vh;
+    color: grey;
+}
+.footer-navlinks a{
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.footer-navlinks a:hover{
+    color: white;
+}
+.marker{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30vh;
+    padding: 1%;
+    border: 1px solid white
+}
+.marker img{
+    width: 90%;
+}
