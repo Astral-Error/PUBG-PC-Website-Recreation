@@ -216,6 +216,9 @@ a{
 .in-yt-video{
     display: flex;
 }
+.in-yt-video iframe{
+    width: 50vw;
+}
 .desc-text-container{
     position: absolute;
     top: 0%;
