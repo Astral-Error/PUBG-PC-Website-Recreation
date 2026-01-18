@@ -8,7 +8,7 @@
         <style>
             body{
                 margin: 0px;
-                max-width: 100vw;
+                max-width: 100%;
                 box-sizing: border-box;
             }
         </style>
@@ -24,7 +24,6 @@
                     </span>
                 </a>
             </div>
-            <div></div>
             <div class="right-half">
                 <img src="https://wstatic-prod.pubg.com/web/live/main_b936404/img/1de035e.webp" id="logo">
                 <div class="selector">
@@ -36,7 +35,7 @@
                 </div>
                 <div class="tilde"><span>|</span></div>
                 <div><a href="#" id="login">Log-in</a></div>
-                <div><a href="#"><button>play now</button></a></div>
+                <a href="#" class="button-link">play now</a>
             </div>
         </div>
         <div class="nav-links">
@@ -69,14 +68,16 @@
             <div class="in-yt-video">
                 <div class="patch-notes">
                     <img src="https://wstatic-prod.pubg.com/web/live/main_b936404/img/ea41f33.webp">
-                    <p class="pn-text"><a href="https://pubg.com/en/news?category=patch_notes">patch notes</a></p>
-                    <div class="hyper-links">
-                        <a href="https://pubg.com/en/news/9635">pc</a>
-                        <a href="https://pubg.com/en/news/9635">console</a>
-                    </div>
-                    <div class="pn-desc">
-                        <p class="pn-desc-heading">Patch Notes - Update 39.2</p>
-                        <p class="pn-desc-desc">Introducing Updates 39.2&colon; Discover all the latest features and improvements!</p>
+                    <div class="desc-text-container">
+                        <p class="pn-text"><a href="https://pubg.com/en/news?category=patch_notes">patch notes</a></p>
+                            <div class="pn-desc">
+                                <div class="hyper-links">
+                                <a href="https://pubg.com/en/news/9635">pc</a>
+                                <a href="https://pubg.com/en/news/9635">console</a>
+                            </div>
+                            <p class="pn-desc-heading">Patch Notes - Update 39.2</p>
+                            <p class="pn-desc-desc">Introducing Updates 39.2&colon; Discover all the latest features and improvements!</p>
+                        </div>
                     </div>
                 </div>
                 <iframe src="https://www.youtube.com/embed/ERyang_Ua1Y?si=MRWSM3vymFSQRh-7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -134,8 +135,10 @@
 
         <div class="events-tabs">
             <div class="events-container">
-                <img src="https://wstatic-prod-boc.krafton.com/common/content/events/20251203/nzOmcaHY_thumb.jpg">
-                <img class="events-bg-texture" src="https://wstatic-prod.pubg.com/web/live/main_b936404/img/ea41f33.webp">
+                <div class="events-image-container">
+                    <img src="https://wstatic-prod-boc.krafton.com/common/content/events/20251203/nzOmcaHY_thumb.jpg">
+                    <img class="events-bg-texture" src="https://wstatic-prod.pubg.com/web/live/main_b936404/img/ea41f33.webp">
+                </div>
                 <div class="events-text">
                     <div>
                         <a class="pc" href="#">PC</a>
