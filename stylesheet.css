@@ -21,6 +21,7 @@ a{
     font-size: 120%;
     color: white;
     font-family: 'Roboto';
+    z-index: 3;
 }
 .left-half a{
     transition: color 0.3s ease;
@@ -35,9 +36,11 @@ a{
     justify-content: space-between;
     color: white;
     height: 100%;
+    z-index: 3;
 }
 /*Select modification*/
 .selector{
+    z-index: 3;
     transition: color 0.3s ease;
 }
 .selector:hover{
