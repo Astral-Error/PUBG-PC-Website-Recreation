@@ -1,4 +1,10 @@
 /*For the header*/
+.god-container{
+    width: 1920px;       /* Forces the layout to strict pixels */
+    max-width: 100%;     /* Prevents side-scroll on small phones */
+    position: relative;  /* Creates the boundary for absolute positioning */
+    overflow-x: hidden;
+}
 .header{
     background-color: black;
     display: flex;
@@ -192,9 +198,9 @@
     border: 1px solid orange;
 }
 .yt-video{
-    position: absolute;
+    position: relative;
+    margin-top: 45%;
     width: 100%;
-    top: 90%;
     display: flex;
     align-content: center;
     align-items: center;
@@ -289,14 +295,12 @@
     color: rgb(159, 159, 159);
 }
 .news{
-    position: absolute;
-    top: 160%;
-    left: 47%;
-    z-index: 1;
+    position: relative;
     color: white;
     font-size: 400%;
     font-family: 'Pubg Sans';
     transition: color 0.3s ease;
+    margin-top: 5%;
 }
 .news a{
     text-decoration: none;
@@ -305,19 +309,19 @@
 }
 .news::before{
     position: absolute;
-    top: 25%;
-    left: 105%;
     content: "\f061";
+    top: 25%;
+    left: 110%;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 50%;
 }
 .news::after{
     position: absolute;
-    top: 80%;
-    left: 3%;
     background-color: orange;
     text-decoration: underline;
+    top: 82%;
+    left: 1%;
     width: 0%;
     content:'';
     height: 2px;
@@ -333,15 +337,14 @@
     color: orange;
 }
 .news-tabs{
-    position: absolute;
-    top: 176%;
-    z-index: 1;
+    position: relative;
     max-width: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 0 3%;
     box-sizing: border-box;
+    margin-top: 5%;
 }
 .news-container{
     position: relative;
@@ -463,10 +466,7 @@
     width: 100%;
 }
 .Events{
-    position: absolute;
-    top: 247%;
-    left: 43%;
-    z-index: 1;
+    position: relative;
     color: black;
     font-size: 400%;
     font-family: 'Pubg Sans';
@@ -507,12 +507,9 @@
     color: orange
 }
 .events-tabs{
-    position: absolute;
-    top: 260%;
-    z-index: 1;
+    position: relative;
     max-width: 100%;
     width: 100%;
-
     display: flex;
     justify-content: space-around;
     color: white;
@@ -598,6 +595,20 @@
 .events-footer-container{
     display: flex;
     gap: 20%;
+}
+.floating-stuff{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;  
+    min-height: 100%;
+    overflow: visible; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
 }
 .footer{
     background-color: black;
